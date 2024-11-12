@@ -8,7 +8,8 @@ pygame.init()
 
 # Set up display
 width, height = 800, 600
-window = pygame.display.set_mode((width, height), pygame.RESIZABLE)
+window = pygame.display.set_mode((width, height))
+# window = pygame.display.set_mode((width, height), pygame.RESIZABLE)
 pygame.display.set_caption("Agent-Environment Simulation")
 
 # Set up environment and agent
