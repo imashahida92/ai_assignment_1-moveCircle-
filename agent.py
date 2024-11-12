@@ -2,8 +2,8 @@
 import pygame
 
 class Agent:
-    def __init__(self, environment, x=50, y=50, speed=5):
-        self.environment = environment  # Reference to the environment
+    def __init__(self, Environment, x=50, y=50, speed=5):
+        self.Environment = Environment  # Reference to the Environment
         self.x = x                      # Initial x position
         self.y = y                      # Initial y position
         self.speed = speed              # Movement speed
@@ -20,7 +20,7 @@ class Agent:
             self.x += self.speed
 
         # Ensure the agent stays within the environment boundaries
-        self.environment.limit_position(self)
+        self.Environment.limit_position(self)
 
     def get_position(self):
         return self.x, self.y
