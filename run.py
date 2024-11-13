@@ -10,7 +10,7 @@ pygame.init()
 width, height = 800, 600
 window = pygame.display.set_mode((width, height))
 # window = pygame.display.set_mode((width, height), pygame.RESIZABLE)
-pygame.display.set_caption("Agent-Environment Simulation")
+pygame.display.set_caption("Agent-Environment Simulation (2022-1-60-318)")
 
 # Set up environment and agent
 environment = Environment(width, height)
@@ -48,7 +48,7 @@ while running:
     pygame.draw.circle(window, (86, 200, 245), (x, y), 20)
 
     # Display the agent's position
-    position_text = font.render(f"Position: ({x}, {y})", True, (0,0,0), (147, 250, 246))
+    position_text = font.render(f"Position of the agent: ({x}, {y})", True, (0,0,0), (147, 250, 246))
     window.blit(position_text, (300, 0))
 
     # Update the display
